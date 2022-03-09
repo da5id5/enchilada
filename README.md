@@ -13,8 +13,11 @@ mv enchilada URnewProjectName
 
 cd into URnewProjectName
 
+rm -rf .git
+
 npm install (install dependencies)
 
 npm run build
+
 
 enjoy!
