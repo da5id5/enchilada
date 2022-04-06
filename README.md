@@ -19,5 +19,7 @@ npm install (install dependencies)
 
 npm run build
 
-
 enjoy!
+
+P.S. if you need to run a local server
+npm run start

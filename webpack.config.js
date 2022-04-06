@@ -1,16 +1,22 @@
 const path = require("path");
-module.exports = { mode: "development",
+module.exports = {
+mode: "development",
 entry: "./src/index.js",
 output: {
 filename: "main.js",
 path: path.resolve(__dirname, "dist") },
-module: { rules: [
+module: {
+rules: [
 
 {
-test: /\.scss$/, use: [
+test: /\.scss$/,
+use: [
 "style-loader",
 "css-loader",
 "sass-loader",
 ], },
 ], },
+devServer: {
+static: './dist',
+},
 };
